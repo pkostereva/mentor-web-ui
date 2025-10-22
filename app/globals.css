@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .prose {
+    @apply text-gray-800 leading-relaxed;
+  }
+
+  .prose h2,
+  .prose h3 {
+    @apply text-gray-900 font-semibold mt-6 mb-3;
+  }
+
+  .prose p {
+    @apply my-2;
+  }
+
+  .prose li {
+    @apply my-1;
+  }
+
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+
+  .prose code {
+    @apply bg-gray-100 text-gray-900 rounded px-1 py-0.5 text-sm font-mono;
+  }
+}
+
 body {
   @apply bg-gray-50 text-gray-900;
 }
